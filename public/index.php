@@ -5,10 +5,10 @@ require_once __DIR__ . '/../src/Employee.php';
 require_once __DIR__ . '/../src/Booking.php';
 
 $db_host = "localhost";
-$db_name = "meeting_rooms";
-$db_user = "root";
+$db_name = "test";
+$db_user = "samalex";
 $db_pass = "root";
-$db_port = 3306; 
+$db_port = 8989; 
 $db_socket = null; 
 
 $database = new Database($db_host, $db_name, $db_user, $db_pass, $db_port, $db_socket);

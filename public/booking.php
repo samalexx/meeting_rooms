@@ -3,14 +3,13 @@ require_once __DIR__ . '/../src/Database.php';
 require_once __DIR__ . '/../src/Booking.php';
 
 $db_host = "localhost";
-$db_name = "meeting_rooms";
-$db_user = "root";
+$db_name = "test";
+$db_user = "samalex";
 $db_pass = "root";
-$db_port = 3306;
-$db_socket = null;
+$db_port = 8989; 
+$db_socket = null; 
 
 $database = new Database($db_host, $db_name, $db_user, $db_pass, $db_port, $db_socket);
-$booking = new Booking($database);
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $room_id = $_POST["room_id"];

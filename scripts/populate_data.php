@@ -1,11 +1,13 @@
 <?php
 
 $db_host = "localhost";
-$db_name = "meeting_rooms";
-$db_user = "root";
+$db_name = "test";
+$db_user = "samalex";
 $db_pass = "root";
+$db_port = 8989; 
+$db_socket = null; 
 
-$mysqli = new mysqli($db_host, $db_user, $db_pass, $db_name);
+$mysqli = @new mysqli($db_host, $db_user, $db_pass, $db_name, $db_port, $db_socket); // Добавил @ для подавления предупреждений
 
 if ($mysqli->connect_error) {
     die("Ошибка подключения: " . $mysqli->connect_error);
@@ -40,7 +42,7 @@ function isRoomOrEmployeeBooked($mysqli, $room_id, $employee_id, $start_time, $d
 
 $num_rooms = 5;
 $num_employees = 10;
-$num_bookings = 300;
+$num_bookings = 800;
 $start_date = '2025-03-07';
 $end_date = '2025-06-07';
 
