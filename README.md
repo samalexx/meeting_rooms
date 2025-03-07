@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 # Тестовое задание ИНТАС. Бронирование переговорных комнат
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Docker Automated build](https://img.shields.io/docker/automated/samalexx/meeting_rooms.svg)](https://hub.docker.com/r/samalexx/meeting_rooms)
 
 Система бронирования переговорных комнат - это простое веб-приложение, разработанное на PHP и использующее базу данных MySQL для управления бронированиями комнат и сотрудниками.
 
